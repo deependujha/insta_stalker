@@ -20,7 +20,7 @@ const PORT = process.env.PORT || 3000;
 const options = {
 	method: 'GET',
 	url: 'https://instagram28.p.rapidapi.com/user_info',
-	params: { user_name: 'deependu__' },
+	params: { user_name: process.env.USERNAME || 'deependu__' },
 	headers: {
 		'X-RapidAPI-Key': process.env.RAPID_API_KEY || '',
 		'X-RapidAPI-Host': 'instagram28.p.rapidapi.com',

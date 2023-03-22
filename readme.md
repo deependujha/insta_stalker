@@ -21,11 +21,13 @@ npm i
 
 - Visit [Rapid API](https://rapidapi.com/yuananf/api/instagram28/pricing) and subscribe for the [Instagram API](https://rapidapi.com/yuananf/api/instagram28/pricing) and get your API key
 
-- Create a `.env` file and paste your tokens
+- Create a `.env` file and paste your tokens, and the username of the account you want to stalk
 ```bash
 RAPID_API_KEY="YOUR_RAPID_API_KEY"
 
 TELEGRAM_BOT_TOKEN="YOUR_TELEGRAM_BOT_TOKEN"
+
+USERNAME="USERNAME_OF_THE_ACCOUNT_YOU_WANT_TO_STALK"
 ```
 
 - Run the bot
