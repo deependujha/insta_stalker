@@ -14,13 +14,15 @@ const app: Express = express();
 const bot = new Telegraf(process.env.TELEGRAM_BOT_TOKEN || '');
 const PORT = process.env.PORT || 3000;
 
+const USERNAME = 'deependu__';
+
 // console.log("telegram bot token: ", process.env.TELEGRAM_BOT_TOKEN);
 // console.log("telegram bot token: ", process.env.RAPID_API_KEY   );
 
 const options = {
 	method: 'GET',
 	url: 'https://instagram28.p.rapidapi.com/user_info',
-	params: { user_name: process.env.USERNAME || 'deependu__' },
+	params: { user_name: USERNAME },
 	headers: {
 		'X-RapidAPI-Key': process.env.RAPID_API_KEY || '',
 		'X-RapidAPI-Host': 'instagram28.p.rapidapi.com',
